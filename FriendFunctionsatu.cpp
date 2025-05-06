@@ -1,18 +1,21 @@
-#include <iostream>
+# include <iostream>
+#include <string>
 using namespace std;
-
 class mahasiswa {
+    private :
+    string nama;
     public :
-    int nim ;
-    void shownim(){
-        cout << " No Induk =" << nim << endl;
-    }
+    friend void setNama(mahasiswa &a, string);
 };
+
+void setNama (mahasiswa &a, string b){
+    a.nama =  b;
+    cout << a.nama;
+};
+
 
 int main (){
-    mahasiswa *mhs = new mahasiswa {1}; // pointer obeject mahasiswa
-    mhs  -> nim ;
-    mhs -> shownim ();
-    delete mhs;
-    return 0 ;
-};
+    mahasiswa joko;
+    setNama(joko, "Kairi Kumar");
+    return 0;
+}
