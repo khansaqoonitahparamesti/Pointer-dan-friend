@@ -12,4 +12,8 @@ class mahasiswa {
 int main (){
     mahasiswa mhs{1}; // object mhs dari class mahasiswa
     mhs.shownim();
+
+    mahasiswa &refMhs = mhs; // pointer refernce refmhs
+    refMhs.nim = 2;
+    mhs.shownim();
 }
