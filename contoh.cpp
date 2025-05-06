@@ -36,6 +36,13 @@ class lingkaran {
 };
 
 int main( ) {
-    PersegiPanjang objekpp; 
-    lingkaran ol
-}
+    PersegiPanjang objekPP; 
+    lingkaran ol;
+
+    cout << "Masukkan panjang: ";
+    cin >> objekPP.Panjang;
+    cout << " Masukkan Lebar :" ;
+    cin >> objekPP.Lebar ;
+    cout << " Luas PErsego Panjang :" <<
+    objekPP.luasPp (objekPP. Panjang, objekPP.Lebar) << endl;
+};
