@@ -8,3 +8,11 @@ class mahasiswa {
         cout << " No Induk =" << nim << endl;
     }
 };
+
+int main (){
+    mahasiswa *mhs = new mahasiswa {1}; // pointer obeject mahasiswa
+    mhs  -> nim ;
+    mhs -> shownim ();
+    delete mhs;
+    return 0 ;
+};
