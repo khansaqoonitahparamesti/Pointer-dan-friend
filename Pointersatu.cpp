@@ -16,4 +16,10 @@ int main (){
     mahasiswa &refMhs = mhs; // pointer refernce refmhs
     refMhs.nim = 2;
     mhs.shownim();
+    
+    mahasiswa *pMhs = &mhs; // pointer deference
+    pMhs->nim = 3;
+    pMhs-> shownim();
+
+    return 0;
 }
